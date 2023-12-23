@@ -27,7 +27,7 @@ It is a RESTful API which is written in Java and Spring Boot.
 
 | HTTP Method | HTTP Path                   | Action             |
 |-------------|-----------------------------|--------------------|
-| `GET`       | `/api/v1/animals`              | get all animals        |
+| `GET`       | `/api/v1/animals`              | get animals by paging  |
 | `GET`       | `/api/v1/animals/{id}`         | get animals by id      |
 | `GET`       | `/api/v1/animals/name/{name}`  | search animals by name |
 | `POST`      | `/api/v1/animals/post`         | add new animals        |
@@ -38,7 +38,7 @@ It is a RESTful API which is written in Java and Spring Boot.
 
 | HTTP Method | HTTP Path                  | Action               |
 |-------------|----------------------------|----------------------|
-| `GET`       | `/api/customers`                     | get all customers   |
+| `GET`       | `/api/customers`                     | get customers by paging    |
 | `GET`       | `/api/customers/{customerId}`        | get customer by id  |
 | `GET`       | `/api/customers/animals{customerId}` | get animals by id   |
 | `GET`       | `/api/customers/name/{name}`         | get customer by name|
@@ -50,7 +50,7 @@ It is a RESTful API which is written in Java and Spring Boot.
 
 | HTTP Method | HTTP Path        | Action        |
 |-------------|------------------|---------------|
-| `GET`       | `/api/v1/doctors`            | get all doctors  |
+| `GET`       | `/api/v1/doctors`            | get  doctors by paging  |
 | `GET`       | `/api/v1/doctors/{doctorId}` | get doctor by id |
 | `POST`      | `/api/v1/doctors/`           | add new doctor   |
 | `PUT`       | `/api/v1/doctors/`           | update doctor    |
@@ -60,7 +60,7 @@ It is a RESTful API which is written in Java and Spring Boot.
 
 | HTTP Method | HTTP Path                                                               | Action                                   |
 |-------------|-------------------------------------------------------------------------|------------------------------------------|
-| `GET`       | `/api/v1/vaccine`                                                          | get all vaccines                           |
+| `GET`       | `/api/v1/vaccine`                                                          | get vaccines by paging                     |
 | `GET`       | `/api/v1/vaccine/{id}`                                                     | get vaccine by id                          |
 | `GET`       | `/api/v1/vaccine/animals-in-vaccination-range`                             |  get vaccines ending in the given period   |
 | `GET`       | `/api/v1/vaccine/animal/{animal_id}`                                       | get all vaccines administered to the animal|
@@ -72,22 +72,22 @@ It is a RESTful API which is written in Java and Spring Boot.
 
 | HTTP Method | HTTP Path                                               | Action                                      |
 |-------------|---------------------------------------------------------|---------------------------------------------|
-| `GET`       | `/api/appointments`                                     | get all appointments                        |
-| `GET`       | `/api/appointments/v1/by-doctor-and-date-range/`        | get appointments of vet in the given period |
-| `GET`       | `/api/appointments/v1/by-animal-and-date-range/`        | get appointments of pet in the given period |
-| `POST`      | `/api/appointments/post`                                | add new appointment                         |
-| `PUT`       | `/api/appointments/`                                    | update appointment                          |
-| `DELETE`    | `/api/appointments/delete{appointment_id}`              | delete appointment                          |
+| `GET`       | `/api/appointments`                                     | get  appointments by paging                    |
+| `GET`       | `/api/appointments/v1/by-doctor-and-date-range/`        | get appointments of doctor in the given period |
+| `GET`       | `/api/appointments/v1/by-animal-and-date-range/`        | get appointments of animal in the given period |
+| `POST`      | `/api/appointments/post`                                | add new appointment                            |
+| `PUT`       | `/api/appointments/`                                    | update appointment                             |
+| `DELETE`    | `/api/appointments/delete{appointment_id}`              | delete appointment                             |
 
 ### AvailableDay
 
 | HTTP Method | HTTP Path                      | Action            |
 |-------------|--------------------------------|-------------------|
-| `GET`       | `/api/v1/dates`                 | get all availabledate    |
-| `GET`       | `/api/v1/dates/{id}`            | get availabledate  by id |
-| `POST`      | `/api/v1/dates/`                | add new availabledate    |
-| `PUT`       | `/api/v1/dates/`                | update availabledate     |
-| `DELETE`    | `/api/v1/dates/delete{date_id}` | delete availabledate     |
+| `GET`       | `/api/v1/dates`                 | get  availabledate  by paging   |
+| `GET`       | `/api/v1/dates/{id}`            | get availabledate  by id        |
+| `POST`      | `/api/v1/dates/`                | add new availabledate           |
+| `PUT`       | `/api/v1/dates/`                | update availabledate            |
+| `DELETE`    | `/api/v1/dates/delete{date_id}` | delete availabledate            |
 
 ---
 ### UML
